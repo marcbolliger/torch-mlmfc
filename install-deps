@@ -358,7 +358,7 @@ elif [[ "$(uname)" == 'Linux' ]]; then
 
         install_openblas || true
     elif [[ $distribution == 'debian' ]]; then
-	if [[ $debian_major_version == '8' ]] || [[ $debian_major_version == '9' ]]; then
+	if [[ $debian_major_version == '8' ]] || [[ $debian_major_version == '10' ]]; then
 	    echo "==> Found Debian version ${debian_major_version}"
 	    if sudo apt-get update ; then
 	       echo "Updated successfully."
